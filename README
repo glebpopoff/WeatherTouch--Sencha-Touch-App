@@ -1,0 +1,10 @@
+SenchaWeather - Hourly Weather Forecast Sencha Touch Web App
+
+- HTML templates are in /templates/ folder: index.html (touch version), desktop.html (about the app page)
+- AppConfig.py is where you put in WeatherBug API key and Google Maps API keys
+- All Sencha goodness is in the static/js folder
+
+Drop me a note if you have any questions
+
+Cheers,
+Gleb
