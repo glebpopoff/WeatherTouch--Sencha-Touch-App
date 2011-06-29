@@ -1,0 +1,93 @@
+h1 {
+    color: #314E64;
+	font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+body {
+    color: #434343;
+	background-color: #eee;
+    font: 14px/1.4em "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    line-height: 1;
+}
+h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    margin-top: 1em;
+}
+desktop.css (line 4)
+h2, h3, h4, h5, h6 {
+    color: #314E64;
+    font-weight: bold;
+}
+desktop.css (line 4)
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+    text-rendering: optimizelegibility;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.button
+{
+	border-radius: 15px;
+	background-color: #80B1D3 !important;
+	border: 1px solid rgba(0, 0, 0, 0.45);
+	border-color: rgba(255, 255, 255, 0.45) transparent transparent transparent;
+	color: white;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 12px 0 0;
+	padding: 4px 14px 3px;
+	text-decoration: none;
+}
+   
+.button2
+{
+	border-radius: 15px;
+	background-color: #4C8E0E !important;
+	border: 1px solid rgba(0, 0, 0, 0.45);
+	border-color: rgba(255, 255, 255, 0.45) transparent transparent transparent;
+	color: white;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	height: 26px;
+	width: 200px;
+	line-height: 16px;
+	margin: 0 12px 0 0;
+	padding: 10px 0px 10px 0px;
+	text-decoration: none;
+}
+
+.strong
+{
+	font-weight: bold;
+}
+
+#main-container
+{
+	height: 300px;
+	
+}
+
+#content-container
+{
+	padding-top: 120px;
+	
+}
+
+#app-header
+{
+	
+}
+
+#app-img { float: left; padding-top: 15px; }
+#app-links { height: 15px; float: left; padding-top: 15px; padding-left: 15px}
+#app-info { padding-top: 55px; float: bottom; padding-left: 450px; height: 300px;}

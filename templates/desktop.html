@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>WeatherTouch - Hourly Weather Mobile Web App Built With Sencha Touch and Google AppEngine</title>
+	<script type="text/javascript">
+		function isTouchDevice() 
+		{
+		    try {
+		        document.createEvent("TouchEvent");
+		        return true;
+		    } catch (e) {
+		        return false;
+		    }
+		}
+		
+	</script>
+	<link rel="stylesheet" href="/static/css/desktop.css" type="text/css">
+</head>
+<body>
+	<div id="main-container">
+		<div id="app-header">
+			<h1>WeatherTouch - Hourly Weather Forecast Mobile Web App</h1>
+			<h3>Built using Sencha Touch Mobile Web App Framework and Google AppEngine</h3>
+			<span>The app demonstrates capabilities of the Sencha Touch JavaScript framework for building mobile Web Apps.</span>
+		</div>
+		<div id="app-img">
+		<img src="/static/images/weathertouch-sencha-touch-weather-app.png" alt="WeatherTouch - Sencha Touch Hourly Weather App" title="WeatherTouch - Sencha Touch Hourly Weather App" />
+		</div>
+		<div id="app-links">
+			<a href="/touch" class='button'>View App</a><a href="https://github.com/glebpopov/WeatherTouch--Sencha-Touch-App" class='button'>Get Source</a>
+		</div>
+		<div id="app-info">
+			<ul>
+				<li>HTML5 Geolocation</li>
+				<li>Mobile Forms</li>
+				<li>JSONP and AJAX Proxy</li>
+				<li>Data Stores and Multiple Model Associations (BelongsTo)</li>
+				<li>Pull to Refresh Data Reloading</li>
+				<li>CSS3 Animation</li>
+				<li>Multi Card Layout Screens</li>
+				<li>Scroll Touch Events and List Views</li>
+				<li>Pop-up Overlays and Pop-up Messages</li>
+				<li>Google Android and Apple iOS</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div id="content-container">
+		The app was built using Google App Engine in Python and Sencha Touch framework. If you're using Chrome or on a touch-enabled device, <a href="/touch">you can view the app here</a>.
+		<p>
+			The app uses the WeatherBug JSON API for weather feed and Google Maps for reverse geo lookups. It has screen screens (shown below) and a form that allows you to enter location information (state, city, zip). The location data is stored in App Engine's DataStore. All source (js and python) is available on the <a href="https://github.com/glebpopov/WeatherTouch--Sencha-Touch-App">GitHub</a>.
+		<p>
+		<img src="/static/images/weathertouch-sencha-touch-weather-app-screen1.png" >&nbsp;<img src="/static/images/weathertouch-sencha-touch-weather-app-screen2.png" >&nbsp;
+		<img src="/static/images/weathertouch-sencha-touch-weather-app-screen3.png" >
+		&nbsp;<img src="/static/images/weathertouch-sencha-touch-weather-app-screen4.png" >
+		&nbsp;
+		<img src="/static/images/weathertouch-sencha-touch-weather-app-screen5.png" >
+		
+		</p>
+		<p><a href="/touch" class='button2'>View this site on your device to experience the App</a><a href="https://github.com/glebpopov/WeatherTouch--Sencha-Touch-App" class='button'>Get Source</a></p>
+		<p>&nbsp;</p>
+	</div>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-24252811-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>

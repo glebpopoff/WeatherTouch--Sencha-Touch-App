@@ -1,0 +1,4 @@
+- url: /tdweather.manifest
+  static_files: tdweather.manifest
+  upload: (.*\.(manifest))
+  mime_type: text/cache-manifest

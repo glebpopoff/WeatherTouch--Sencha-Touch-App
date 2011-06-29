@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--<html manifest="tdweather.manifest">-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" href="/static/images/icon.png" />
+    <title>WeatherTouch</title>
+	<link rel="stylesheet" href="/static/sencha/resources/css/sencha-touch.css" type="text/css">
+	<script type="text/javascript">
+		var weatherType = "{{todays_weather}}";
+		var defaultZip = "{{default_zip}}";	
+		var apiKey = "{{google_maps_api_key}}";
+		var defaultLocationName = "{{default_location}}"
+		
+		function getWeatherTodayIcon()
+		{
+			if (weatherType == 'thunder')
+			{
+				return 'weather-thunder';
+				
+			} else if (weatherType == 'wind')
+			{
+				return 'weather-wind';
+			} else if (weatherType == 'rain')
+			{
+				return 'weather-rain';
+			} else if (weatherType == 'cloudy')
+			{
+				return 'weather-cloudy';
+			} else if (weatherType == 'sunny')
+			{
+				return 'weather-sunny';
+			} else
+			{
+				return 'weather-sunny';
+			}
+		}
+		
+		function isTouchDevice() 
+		{
+		    try {
+		        document.createEvent("TouchEvent");
+		        return true;
+		    } catch (e) {
+		        return false;
+		    }
+		}
+		
+	</script>
+	<script type="text/javascript" src="/static/sencha/sencha-touch.js"></script>
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script type="text/javascript" src="/static/js/models/Models.js"></script>
+	<script type="text/javascript" src="/static/js/App.js"></script>
+	<script type="text/javascript" src="/static/js/views/AddNewLocation.js"></script>
+	<script type="text/javascript" src="/static/js/views/WeatherLocations.js"></script>
+	<script type="text/javascript" src="/static/js/views/WeatherForecastFiveDay.js"></script>
+	<script type="text/javascript" src="/static/js/models/utils.js"></script>
+	<script type="text/javascript" src="/static/js/views/WeatherForecastToday.js"></script>
+	<link rel="stylesheet" href="/static/css/app.css" type="text/css">
+</head>
+<body>
+<textarea id="hourly-list-tpl" class="x-hidden-display">
+	<tpl for=".">
+		<div>
+			<tpl for="hourly">
+				<div class='hourly-list-data'>
+					<tpl if="weekDay">
+						<div class="daily-forecast-title">{weekDay}</div>
+					</tpl>
+					<div style="float:left;width:60px;padding-top:.5em">
+						<span class="small_title">{dateTimeStr}</span>
+					</div>
+					<div class="avatar" style="background-image: url(http://img.weather.weatherbug.com/forecast/icons/localized/50x42/en/trans/{icon}.png)">
+					</div>
+					<div style="float:left;text-align:left;">
+						<span class="daily-forecast-time-day">{temperature}&deg; F</span>
+						<span class="weather-details">
+							Precip: {precipChance}%<br/>
+							Wind: {windDir} {windSpeed} mph
+						</span>
+					</div>
+				</div>
+			</tpl>
+		</div>
+	</tpl>
+	<div class="x-clear"></div>
+</textarea>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24252811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
